@@ -1,0 +1,6 @@
+pandas
+pyarrow
+finance-datareader
+torch
+plotly
+easydict
