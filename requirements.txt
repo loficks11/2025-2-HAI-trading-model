@@ -4,3 +4,4 @@ finance-datareader
 torch
 plotly
 easydict
+ipykernel
