@@ -6,6 +6,8 @@ import os
 def get_stock_data(CONFIGS):
     tickers = CONFIGS.TICKERS
     path = CONFIGS.DATAFRAME_PATH
+    os.makedirs(path, exist_ok=True)
+    
     for ticker in tickers:
         df = fdr.DataReader(ticker)
         df.to_parquet(os.path.join(path, f"{ticker}.parquet"), engine="pyarrow")
